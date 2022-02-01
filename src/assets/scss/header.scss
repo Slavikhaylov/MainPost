@@ -1,0 +1,10 @@
+@import  'vars.scss'; 
+.navbar{
+    background-color: $primary;
+}
+
+.social{
+    display: flex;
+    justify-content: space-around;
+    
+}

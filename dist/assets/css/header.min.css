@@ -1,0 +1,8 @@
+.navbar {
+  background-color: #fff;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+}
