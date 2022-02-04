@@ -1,0 +1,10 @@
+.navbar {
+    background-color: #fff;
+}
+
+.social {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}

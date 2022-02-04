@@ -1,7 +1,26 @@
 @import  'vars.scss'; 
 @import  'header.scss'; 
+@import  'content.scss';
+@import  'articles.scss';
+html{
+    overflow-x: hidden;
+} 
 body {
     background-color: $secondary;
     font-size: 21px;
     color: white;
+    overflow-x: hidden;
+    
+}
+.bg-black{
+    background: #000;
+}
+.text-black{
+    color: #000;
+}
+.r-10{
+    right: 10px;
+}
+.container{
+    max-width: 1800px;
 }

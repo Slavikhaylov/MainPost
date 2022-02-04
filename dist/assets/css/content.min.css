@@ -1,12 +1,3 @@
-.navbar {
-  background-color: #fff;
-}
-
-.social {
-  display: flex;
-  justify-content: space-around;
-}
-
 .bg-img {
   width: 100%;
 }
@@ -93,40 +84,4 @@
 .remember {
   width: 240px;
   margin: 20% 0;
-}
-
-.show-all {
-  text-decoration: none;
-  color: #FFF732;
-}
-
-.articles .genre {
-  color: #00FBEC;
-}
-
-html {
-  overflow-x: hidden;
-}
-
-body {
-  background-color: #f2f2f2;
-  font-size: 21px;
-  color: white;
-  overflow-x: hidden;
-}
-
-.bg-black {
-  background: #000;
-}
-
-.text-black {
-  color: #000;
-}
-
-.r-10 {
-  right: 10px;
-}
-
-.container {
-  max-width: 1800px;
 }
