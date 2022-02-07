@@ -1,8 +1,1 @@
-.navbar {
-  background-color: #fff;
-}
-
-.social {
-  display: flex;
-  justify-content: space-around;
-}
+header{position:fixed;width:100%;z-index:10}.navbar{background-color:#fff;z-index:1;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}.p-social{width:35%}.social{display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}

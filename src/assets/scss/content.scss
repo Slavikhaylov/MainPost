@@ -1,14 +1,15 @@
 @import  'vars.scss'; 
-.bg-img{
-    width: 100%;
-}  
+ 
+.content{
+    margin-top: 77px;
+}
 .arrow{
     position: absolute;
     top: 0;
     right: 0;
     height: 20%;
     transition: .2s;
-    z-index: 10;
+    z-index: 1;
     &:hover{
         transform: scale(1.5);
         // height: 100px;
@@ -18,7 +19,7 @@
     position: absolute;
     left: 30px;
     bottom: 30px;
-    font-size: 50px;    
+    font-size: 40px;    
     span{
         background:#000;
         
@@ -26,17 +27,17 @@
     .genre{
         color: #00FBEC;
         margin-bottom: 15px;
-        font-size: 1rem;
+        font-size: 16px;
         padding: 0 20px;
         text-align: center;
         
     }
     .title-1{
-        font-size: 1.5rem;
+        font-size: 30px;
     }
     .title-2{
         margin: 0;
-        font-size: 2rem;
+        font-size: 40px;
         height: 10px;
         padding-right: 30px;
 
@@ -92,3 +93,24 @@
 
 }
 
+
+@media (max-width:500px ) {
+    .discription{
+        
+        font-size: 25px;    
+
+
+        .genre{
+
+            font-size: 1rem;
+        }
+        .title-1{
+            font-size: 1.2rem;
+        }
+        .title-2{
+            font-size: 1.5rem;
+            
+        }
+    }
+    
+}
