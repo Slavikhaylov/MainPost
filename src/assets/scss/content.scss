@@ -10,9 +10,9 @@
     height: 20%;
     transition: .2s;
     z-index: 1;
+    cursor: pointer;
     &:hover{
         transform: scale(1.5);
-        // height: 100px;
     }
 }
 .discription{

@@ -3,9 +3,10 @@ header{
     position: fixed;
     width: 100%;
     z-index: 10;
+    
 }
 .navbar{
-    background-color: $primary;
+    background-color: rgba(255, 255, 255, 0.815);
     z-index: 1;
     display: flex;
     justify-content: space-between;
@@ -16,6 +17,35 @@ header{
 .social{
     display: flex;
     justify-content: space-between;
+
+    
+}
+
+
+.nav-link{
+    font-size: 25px;
+    color: black !important;
+    transition: .1s;
+    &::after{
+        content: '';
+        transition: .5s;
+        display: block;
+        width: 0;
+        bottom: 10px;
+        height: 1px;
+        margin: 0 auto;
+    }
+    &:hover{
+        &::after{
+    
+            width: 100%;
+            box-shadow: 0 3px 1px black;
+            
+            
+        }
+        transform: scale(1.3);
+
+    }
 
     
 }

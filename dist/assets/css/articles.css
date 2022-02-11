@@ -4,6 +4,10 @@
     padding-top: 6px;
 }
 
+.show-all:hover {
+    color: #FFF732;
+}
+
 .articles .genre {
     color: #00FBEC;
     width: 30%;
