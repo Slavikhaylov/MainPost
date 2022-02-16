@@ -12,7 +12,7 @@ header{
     justify-content: space-between;
 }
 .p-social{
-    width: 35%;
+    width: 30%;
 }
 .social{
     display: flex;
@@ -26,6 +26,8 @@ header{
     font-size: 25px;
     color: black !important;
     transition: .1s;
+    text-align: center;
+    width: 100%;
     &::after{
         content: '';
         transition: .5s;
@@ -48,4 +50,15 @@ header{
     }
 
     
+}
+
+
+@media(max-width: 1200px){
+
+
+    .p-social{
+        width: 100%;
+        
+    }
+
 }

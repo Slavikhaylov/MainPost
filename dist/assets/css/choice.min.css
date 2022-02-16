@@ -1,1 +1,22 @@
-.genre-2{background:#000;padding:0 20px;color:#00fbec;position:absolute;right:0;bottom:0}.choice-width{width:80%}.h-ic{height:60px}@media (max-width:1000px){.choice-width{width:100%}}
+.genre-2 {
+  background: #000;
+  padding: 0 20px;
+  color: #00FBEC;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.choice-width {
+  width: 80%;
+}
+
+.h-ic {
+  height: 60px;
+}
+
+@media (max-width: 1000px) {
+  .choice-width {
+    width: 100%;
+  }
+}

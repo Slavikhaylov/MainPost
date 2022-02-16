@@ -28,21 +28,24 @@ const path = {
         js:     distPath + "assets/js/",
         css:    distPath + "assets/css/",
         images: distPath + "assets/images/",
-        fonts:  distPath + "assets/fonts/"
+        fonts:  distPath + "assets/fonts/",
+        audio:  distPath + "assets/audio/"
     },
     src: {
         html:   srcPath + "*.html",
         js:     srcPath + "assets/js/*.js",
         css:    srcPath + "assets/scss/*.scss",
         images: srcPath + "assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}",
-        fonts:  srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}"
+        fonts:  srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}",
+        audio:  srcPath + "assets/audio/**/*.{mp3}"
     },
     watch: {
         html:   srcPath + "**/*.html",
         js:     srcPath + "assets/js/**/*.js",
         css:    srcPath + "assets/scss/**/*.scss",
         images: srcPath + "assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}",
-        fonts:  srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}"
+        fonts:  srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}",
+        audio:  srcPath + "assets/audio/**/*.mp3"
     },
     clean: "./" + distPath
 }
@@ -158,7 +161,13 @@ function js(cb) {
 
     cb();
 }
+function audio(cb) {
+    return src(path.src.audio)
+        .pipe(dest(path.build.audio))
+        .pipe(browserSync.reload({stream: true}));
 
+    cb();
+}
 function jsWatch(cb) {
     return src(path.src.js, {base: srcPath + 'assets/js/'})
         .pipe(plumber({
@@ -210,9 +219,10 @@ function watchFiles() {
     gulp.watch([path.watch.js], jsWatch);
     gulp.watch([path.watch.images], images);
     gulp.watch([path.watch.fonts], fonts);
+    gulp.watch([path.watch.audio], audio);
 }
 
-const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts));
+const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts,audio ));
 const watch = gulp.parallel(build, watchFiles, serve);
 
 
@@ -222,6 +232,7 @@ exports.html = html;
 exports.css = css;
 exports.js = js;
 exports.images = images;
+exports.audio = audio;
 exports.fonts = fonts;
 exports.clean = clean;
 exports.build = build;
