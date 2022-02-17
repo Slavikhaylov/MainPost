@@ -1,0 +1,33 @@
+.video_text {
+    font-size: 3rem;
+}
+
+.show-article {
+    background-color: #FFF732;
+    cursor: pointer;
+}
+
+.test_link {
+    color: black;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.tests {
+    padding: 80px 0 50px 0;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
+.tests::-webkit-scrollbar {
+    width: 24px;
+    height: 5px;
+    background-color: rgba(0, 0, 0, 0.171);
+}
+
+.tests::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px black;
+}

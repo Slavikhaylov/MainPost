@@ -1,0 +1,45 @@
+.show-all {
+    text-decoration: none;
+    color: #FFF732;
+    padding-top: 6px;
+}
+
+.show-all:hover {
+    color: #FFF732;
+}
+
+.articles .genre {
+    color: #00FBEC;
+    width: 30%;
+}
+
+.articles .font {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.article-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+@media (max-width: 540px) {
+    .article-img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .articles .genre {
+        width: 100%;
+    }
+
+    .articles .font {
+        font-size: 30px;
+    }
+
+    .articles .show-all {
+        padding: 0 10px !important;
+    }
+}
