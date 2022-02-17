@@ -1,3 +1,37 @@
 .bg-blue {
   background: #00FBEC;
 }
+
+.mailing {
+  border: 0;
+  padding: 10px 0 10px 15px;
+  width: 60%;
+  background: rgba(255, 255, 255, 0.137);
+}
+
+.subscribe {
+  font-size: 20px;
+  width: 30%;
+  border: 0;
+  background: #FFF732;
+}
+
+.icon {
+  margin: 0 20px;
+}
+
+.border-black {
+  border: 2px solid black;
+}
+
+.footer-main {
+  transform: translateX(-15px);
+  font-family: Play-bold;
+  font-size: 60px;
+  line-height: 55px;
+  white-space: nowrap;
+}
+
+.footer-main-shadow {
+  text-shadow: 2px 0 1px rgba(255, 255, 255, 0.2), -2px 0 1px rgba(255, 255, 255, 0.2), 0 2px 1px rgba(255, 255, 255, 0.2), 0 -2px 1px rgba(255, 255, 255, 0.2);
+}

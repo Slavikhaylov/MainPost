@@ -20,7 +20,7 @@ header {
 }
 
 .p-social {
-    width: 35%;
+    width: 30%;
 }
 
 .social {
@@ -34,6 +34,8 @@ header {
     font-size: 25px;
     color: black !important;
     transition: 0.1s;
+    text-align: center;
+    width: 100%;
 }
 
 .nav-link::after {
@@ -54,6 +56,12 @@ header {
 .nav-link:hover::after {
     width: 100%;
     box-shadow: 0 3px 1px black;
+}
+
+@media (max-width: 1200px) {
+    .p-social {
+        width: 100%;
+    }
 }
 
 .content {
@@ -257,12 +265,36 @@ header {
     box-shadow: inset 1px 1px 10px black;
 }
 
-.progress {
-    height: 0.5rem;
-    overflow: hidden;
-    font-size: 0.75rem;
+.progress-parent {
+    padding: 0;
+    width: 87%;
+}
+
+.progress_container {
     background-color: rgba(255, 255, 255, 0.768);
-    border-radius: 0.25rem;
+    height: 5px;
+    width: 100%;
+    margin-top: 18px;
+    border-radius: 5px;
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.progress_container .progres {
+    border-radius: 5px;
+    background-color: #00FBEC;
+    width: 0;
+    height: 5px;
+}
+
+.mixer {
+    width: 15px;
+    height: 15px;
+    top: -5px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #00FBEC;
 }
 
 .player {
@@ -271,14 +303,24 @@ header {
     padding: 15px;
 }
 
-.play {
-    padding: 0;
+.img_src {
+    width: 35px;
+    -webkit-filter: grayscale(100);
+    filter: grayscale(100);
+    transition: 0.2s;
+    cursor: pointer;
 }
 
-.img_src {
-    -webkit-filter: hue-rotate();
-    filter: hue-rotate();
-    width: 60px;
+.img_src:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+@media (max-width: 500px) {
+    .progress-parent {
+        width: 80%;
+        margin-left: 15px;
+    }
 }
 
 .genre-2 {

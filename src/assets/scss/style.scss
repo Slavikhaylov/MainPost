@@ -35,6 +35,9 @@ body {
 .text-black{
     color: #000;
 }
+.text-blue{
+    color: #00FBEC;
+}
 .text-white{
     color: #fff;
 }
@@ -78,5 +81,8 @@ body {
 
 
 
-
+@font-face {
+    font-family: 'Play-bold';
+    src: url(../fonts/Play-Bold.ttf);
+}
 

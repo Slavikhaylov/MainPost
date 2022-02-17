@@ -14,7 +14,7 @@ header {
 }
 
 .p-social {
-    width: 35%;
+    width: 30%;
 }
 
 .social {
@@ -28,6 +28,8 @@ header {
     font-size: 25px;
     color: black !important;
     transition: 0.1s;
+    text-align: center;
+    width: 100%;
 }
 
 .nav-link::after {
@@ -48,4 +50,10 @@ header {
 .nav-link:hover::after {
     width: 100%;
     box-shadow: 0 3px 1px black;
+}
+
+@media (max-width: 1200px) {
+    .p-social {
+        width: 100%;
+    }
 }
