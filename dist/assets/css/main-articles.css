@@ -1,0 +1,40 @@
+.article_links {
+    margin-top: 100px;
+}
+
+.article_links a {
+    font-family: "Montserrat-medium";
+    text-decoration: none;
+    color: black;
+}
+
+.article_links .active-link {
+    font-family: "Montserrat-bold";
+}
+
+.article-title {
+    margin: 20px 0;
+    color: #000;
+    font-family: "Montserrat-bold";
+    font-size: 32px;
+}
+
+.main-article-text {
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 24px;
+    font-family: "Montserrat-medium";
+}
+
+.read-all {
+    margin-top: 20px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    color: #000;
+    font-family: "Montserrat-medium";
+    border-bottom: 2px solid black;
+}
+
+.border-b {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}

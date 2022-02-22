@@ -28,6 +28,8 @@
 }
 
 .title_1 {
+    text-transform: uppercase;
+    color: #000;
     margin-top: 10px;
     font-family: "Play-bold";
     font-size: 58px;
