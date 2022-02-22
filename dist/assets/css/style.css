@@ -49,8 +49,8 @@ header {
 }
 
 .nav-link:hover {
-    -webkit-transform: scale(2);
-    transform: scale(2);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .nav-link:hover::after {
@@ -104,9 +104,11 @@ header {
 
 .discription .title-1 {
     font-size: 30px;
+    font-family: "Play-regular";
 }
 
 .discription .title-2 {
+    font-family: "Comic-cat";
     margin: 0;
     font-size: 40px;
     height: 10px;
@@ -189,6 +191,10 @@ header {
     text-decoration: none;
     color: #FFF732;
     padding-top: 6px;
+    height: 40px;
+    padding: 5px;
+    font-family: "Play-regular";
+    margin-top: 20px;
 }
 
 .show-all:hover {
@@ -197,12 +203,23 @@ header {
 
 .articles .genre {
     color: #00FBEC;
-    width: 30%;
+    display: inline-block;
 }
 
 .articles .font {
     font-size: 20px;
     font-weight: 900;
+}
+
+.font {
+    font-family: "Osward-bold";
+    margin-top: 5px;
+}
+
+.title_1 {
+    margin-top: 10px;
+    font-family: "Play-bold";
+    font-size: 58px;
 }
 
 .article-text {
@@ -218,6 +235,10 @@ header {
         margin-bottom: 30px;
     }
 
+    .title_1 {
+        font-size: 40px;
+    }
+
     .articles .genre {
         width: 100%;
     }
@@ -227,16 +248,91 @@ header {
     }
 
     .articles .show-all {
-        padding: 0 10px !important;
+        padding: 5px 10px !important;
     }
 }
 
+.best-article {
+    font-family: "Play-bold";
+    font-size: 56px;
+}
+
+.best-article-text {
+    font-family: "Montserrat-bold";
+}
+
+.best-article-title {
+    font-family: "Play-regular";
+    font-size: 80px;
+    line-height: 72px;
+}
+
+.best-article-text-2 {
+    font-family: "Montserrat-medium";
+    color: rgba(255, 255, 255, 0.596);
+}
+
+.style {
+    font-family: "Montherrat-bold";
+    font-size: 28px;
+}
+
 .video_text {
-    font-size: 3rem;
+    font-size: 32px;
+    font-family: "Play-bold";
 }
 
 .show-article {
     background-color: #FFF732;
+    cursor: pointer;
+    font-family: "Play-regular";
+    font-size: 24px;
+    margin-left: auto;
+    padding: 10px 25px;
+    display: block;
+}
+
+.video_text {
+    font-size: 32px;
+    font-family: "Play-bold";
+}
+
+.show-podcasts {
+    text-align: center;
+    height: 48px;
+    font-size: 24px;
+    background-color: #FFF732;
+    color: black;
+    padding: 5px 10px 5px 10px;
+    font-family: "Play-regular";
+}
+
+.podcast_title-1 {
+    font-family: "Play-bold";
+    font-size: 48px;
+}
+
+.podcast_title-2 {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: "Montserrat-medium";
+}
+
+.author {
+    font-family: "Montserrat-bold";
+    color: white;
+}
+
+.podcast_text {
+    margin-top: 15px;
+    font-family: "Montserrat-medium";
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 120%;
+}
+
+.scale:hover {
+    transition: 0.2s;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
     cursor: pointer;
 }
 
@@ -244,10 +340,27 @@ header {
     color: black;
     letter-spacing: 3px;
     font-weight: bold;
+    font-family: "Play-bold";
+    font-size: 24px;
+    line-height: 100%;
+}
+
+.test-info {
+    opacity: 0.4;
+}
+
+.test-text {
+    font-family: "Montserrat-medium";
+    font-size: 26px;
+    line-height: 120%;
+}
+
+.test-title {
+    font: 36px "Play-bold";
 }
 
 .tests {
-    padding: 80px 0 50px 0;
+    padding: 50px 0 50px 0;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     overflow-x: scroll;
@@ -298,6 +411,7 @@ header {
 }
 
 .player {
+    margin-top: 10px;
     background: rgba(255, 255, 255, 0.055);
     border-radius: 20px;
     padding: 15px;
@@ -336,6 +450,16 @@ header {
     width: 80%;
 }
 
+.choice-title {
+    margin: 15px 0;
+    font-family: "Play-bold";
+    font-size: 36px;
+}
+
+.choice-text {
+    font-family: "Montserrat-medium";
+}
+
 .h-ic {
     height: 60px;
 }
@@ -346,26 +470,88 @@ header {
     }
 }
 
+@media (max-width: 1400px) {
+    .choice-title {
+        font-size: 30px;
+    }
+
+    .choice-text {
+        line-height: 120%;
+        font-size: 18px;
+    }
+}
+
 .bg-blue {
     background: #00FBEC;
 }
 
 .mailing {
+    padding: 30px 35px 40px 30px;
+}
+
+.mailing-text {
+    font-family: "Play-bold";
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.mailing-block {
+    width: 90%;
+}
+
+.mailing-input {
     border: 0;
     padding: 10px 0 10px 15px;
-    width: 60%;
+    width: 70%;
+    color: white;
     background: rgba(255, 255, 255, 0.137);
+}
+
+.mailing-input:focus {
+    outline: solid #00FBEC;
 }
 
 .subscribe {
     font-size: 20px;
-    width: 30%;
     border: 0;
+    letter-spacing: 0px;
     background: #FFF732;
+    display: inline-block;
+    transition: 0.5s;
 }
 
-.icon {
-    margin: 0 20px;
+.subscribe:hover {
+    background: #00FBEC;
+}
+
+.h-90 {
+    height: 80%;
+}
+
+.h-10 {
+    height: 20%;
+}
+
+.socials {
+    padding: 30px;
+}
+
+.footer-title {
+    font-family: "Play-bold";
+    font-size: 24px;
+}
+
+.sections {
+    padding: 30px;
+}
+
+.sections a {
+    font-weight: 600;
+    font-size: 20px;
+    font-family: "Play-regular";
+    text-decoration: none;
+    color: black;
+    line-height: 35px;
 }
 
 .border-black {
@@ -376,13 +562,55 @@ header {
     -webkit-transform: translateX(-15px);
     transform: translateX(-15px);
     font-family: Play-bold;
-    font-size: 60px;
+    font-size: 3.6vw;
     line-height: 55px;
     white-space: nowrap;
 }
 
+.icon {
+    height: 28px;
+}
+
 .footer-main-shadow {
-    text-shadow: 2px 0 1px rgba(255, 255, 255, 0.2), -2px 0 1px rgba(255, 255, 255, 0.2), 0 2px 1px rgba(255, 255, 255, 0.2), 0 -2px 1px rgba(255, 255, 255, 0.2);
+    -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.555);
+}
+
+.social-text {
+    font-family: "Play-bold";
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    footer .h-10 {
+        height: auto;
+    }
+
+    footer .h-90 {
+        height: auto;
+    }
+
+    footer .ic-container {
+        width: 30% !important;
+        margin-left: 10%;
+    }
+
+    footer .icon {
+        margin: 0 3vw;
+    }
+
+    footer .sections {
+        padding: 30px 50px;
+    }
+
+    footer .mailing-block {
+        width: 100%;
+    }
+
+    footer .socials {
+        width: 100%;
+        padding: 15px 0 15px 40px;
+        display: block;
+    }
 }
 
 html {
@@ -428,9 +656,14 @@ body {
     right: 10px;
 }
 
-.font {
-    font-size: 24px;
-    font-weight: 900;
+.date {
+    opacity: 0.5;
+    margin: 5px 0;
+}
+
+.time {
+    opacity: 0.5;
+    margin-top: 5px;
 }
 
 .text-grey {
@@ -466,4 +699,29 @@ body {
 @font-face {
     font-family: "Play-bold";
   src: url(../fonts/Play-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Play-regular";
+  src: url(../fonts/Play-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Comic-cat";
+  src: url(../fonts/Comic_CAT.otf);
+}
+
+@font-face {
+    font-family: "Osward-bold";
+  src: url(../fonts/Oswald-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-bold";
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-medium";
+  src: url(../fonts/Montserrat-Medium.ttf);
 }

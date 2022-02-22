@@ -38,9 +38,11 @@
 
 .discription .title-1 {
     font-size: 30px;
+    font-family: "Play-regular";
 }
 
 .discription .title-2 {
+    font-family: "Comic-cat";
     margin: 0;
     font-size: 40px;
     height: 10px;

@@ -43,8 +43,8 @@ header {
 }
 
 .nav-link:hover {
-    -webkit-transform: scale(2);
-    transform: scale(2);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .nav-link:hover::after {

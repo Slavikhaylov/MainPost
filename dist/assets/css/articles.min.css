@@ -2,6 +2,10 @@
   text-decoration: none;
   color: #FFF732;
   padding-top: 6px;
+  height: 40px;
+  padding: 5px;
+  font-family: "Play-regular";
+  margin-top: 20px;
 }
 .show-all:hover {
   color: #FFF732;
@@ -9,11 +13,24 @@
 
 .articles .genre {
   color: #00FBEC;
-  width: 30%;
+  display: inline-block;
 }
 .articles .font {
   font-size: 20px;
   font-weight: 900;
+}
+
+.font {
+  font-family: "Osward-bold";
+  margin-top: 5px;
+}
+
+.title_1 {
+  text-transform: uppercase;
+  color: #000;
+  margin-top: 10px;
+  font-family: "Play-bold";
+  font-size: 58px;
 }
 
 .article-text {
@@ -29,6 +46,10 @@
     margin-bottom: 30px;
   }
 
+  .title_1 {
+    font-size: 40px;
+  }
+
   .articles .genre {
     width: 100%;
   }
@@ -36,6 +57,6 @@
     font-size: 30px;
   }
   .articles .show-all {
-    padding: 0 10px !important;
+    padding: 5px 10px !important;
   }
 }
