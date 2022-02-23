@@ -16,14 +16,14 @@ const player = document.querySelector('.player'),
       
 
 function playSong(){
-    imgSrc.src= "assets/images/pause_h.png"
+    imgSrc.src= "assets/images/pause.png"
     imgSrc.classList.add('play')
     audio.play()
     
 }
 function pauseSong(){
     
-    imgSrc.src= "assets/images/play_h.png"
+    imgSrc.src= "assets/images/play.png"
 
     
     imgSrc.classList.remove('play')

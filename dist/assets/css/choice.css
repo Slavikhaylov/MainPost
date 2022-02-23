@@ -11,6 +11,16 @@
     width: 80%;
 }
 
+.choice-title {
+    margin: 15px 0;
+    font-family: "Play-bold";
+    font-size: 36px;
+}
+
+.choice-text {
+    font-family: "Montserrat-medium";
+}
+
 .h-ic {
     height: 60px;
 }
@@ -18,5 +28,16 @@
 @media (max-width: 1000px) {
     .choice-width {
         width: 100%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .choice-title {
+        font-size: 30px;
+    }
+
+    .choice-text {
+        line-height: 120%;
+        font-size: 18px;
     }
 }

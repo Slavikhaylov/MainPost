@@ -37,7 +37,7 @@ header {
   margin: 0 auto;
 }
 .nav-link:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 .nav-link:hover::after {
   width: 100%;

@@ -5,15 +5,20 @@
     text-decoration: none;
     color: #FFF732;
     padding-top: 6px;
+    height: 40px;
+    padding: 5px;
+    font-family: "Play-regular";
+    margin-top: 20px;
     &:hover{
         color: #FFF732;
     }
 
 }
+
 .articles{
     .genre{
         color: #00FBEC;
-        width: 30%;
+        display: inline-block;
     }
 
     .font{
@@ -23,7 +28,19 @@
 
 
 }
+.font{
+    font-family: 'Osward-bold';
+    margin-top: 5px;
+}
+.title_1{
+    text-transform: uppercase;
+    color: #000;
+    margin-top: 10px;
+    font-family: 'Play-bold';
+    font-size: 58px;
+}
 .article-text{
+
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
@@ -35,6 +52,9 @@
         width: 100%;
         margin-bottom: 30px;
     }
+    .title_1{
+        font-size: 40px;
+    }
     .articles{
         .genre{
            width: 100%;
@@ -43,7 +63,7 @@
             font-size: 30px;
         }
         .show-all{
-            padding: 0 10px !important;
+            padding: 5px 10px !important;
         }
     
      

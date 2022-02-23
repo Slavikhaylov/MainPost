@@ -12,7 +12,7 @@
   cursor: pointer;
 }
 .arrow:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 .discription {
@@ -33,22 +33,14 @@
 }
 .discription .title-1 {
   font-size: 30px;
+  font-family: "Play-regular";
 }
 .discription .title-2 {
+  font-family: "Comic-cat";
   margin: 0;
   font-size: 40px;
   height: 10px;
   padding-right: 30px;
-}
-
-.stripe {
-  width: 103%;
-  display: flex;
-  white-space: nowrap;
-  margin-top: 30px;
-  background-color: #00FBEC;
-  border: 1px solid black;
-  border-left: 0;
 }
 
 .news {
@@ -99,5 +91,28 @@
   }
   .discription .title-2 {
     font-size: 1.5rem;
+  }
+}
+.stripe {
+  width: fit-content;
+  white-space: nowrap;
+  margin-top: 30px;
+  background-color: #00FBEC;
+  border: 1px solid black;
+}
+
+.stripe-text {
+  position: relative;
+  animation: stripe 40s linear infinite;
+  color: #000;
+  font-family: "Play-regular";
+}
+
+@keyframes stripe {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -100%;
   }
 }

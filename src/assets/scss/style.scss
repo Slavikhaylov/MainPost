@@ -10,6 +10,9 @@
 @import  'player.scss';
 @import  'choice.scss';
 @import  'footer.scss';
+@import  'news_page.scss';
+@import  'main-articles.scss';
+@import  'podcasts.scss';
 html{
     overflow-x: hidden;
 } 
@@ -46,9 +49,13 @@ body {
     right: 10px;
 }
 
-.font{
-    font-size: 24px;
-    font-weight: 900;
+.date{
+    opacity: .5;
+    margin: 5px 0;
+}
+.time{
+    opacity: 0.5;
+    margin-top: 5px;
 }
 
 .text-grey{
@@ -81,8 +88,32 @@ body {
 
 
 
+
+
 @font-face {
     font-family: 'Play-bold';
     src: url(../fonts/Play-Bold.ttf);
 }
+
+@font-face {
+    font-family: 'Play-regular';
+    src: url(../fonts/Play-Regular.ttf);
+}
+@font-face {
+    font-family: 'Comic-cat';
+    src: url(../fonts/Comic_CAT.otf);
+}
+@font-face {
+    font-family: 'Osward-bold';
+    src: url(../fonts/Oswald-Bold.ttf);
+}
+@font-face {
+    font-family: 'Montserrat-bold';
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: 'Montserrat-medium';
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+
 
