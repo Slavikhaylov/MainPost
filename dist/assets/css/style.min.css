@@ -112,7 +112,7 @@ header {
   text-decoration: underline #FFF732;
   cursor: pointer;
   position: absolute;
-  right: 20px;
+  right: 10px;
   top: 10px;
 }
 .news .update::after {
@@ -178,6 +178,7 @@ header {
   padding: 5px;
   font-family: "Play-regular";
   margin-top: 20px;
+  white-space: nowrap;
 }
 .show-all:hover {
   color: #FFF732;
@@ -320,28 +321,48 @@ header {
   letter-spacing: 3px;
   font-weight: bold;
   font-family: "Play-bold";
-  font-size: 24px;
+  font-size: 18px;
   line-height: 100%;
 }
 
 .test-info {
   opacity: 0.4;
+  font-size: 14px;
 }
 
 .test-text {
   font-family: "Montserrat-medium";
-  font-size: 26px;
+  font-size: 17px;
   line-height: 120%;
 }
 
 .test-title {
-  font: 36px "Play-bold";
+  font: 24px "Play-bold";
+
 }
 
 .tests {
   padding: 50px 0 50px 0;
-  flex-wrap: nowrap;
-  overflow-x: scroll;
+}
+.test{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+
+  
+}
+
+.test-img{
+  /* padding: 0 10px; */
+  width: 250px;
+
+  object-fit: cover;
+ 
+
+}
+.test-content{
+  padding:  10px;
+  width: 100%;
 }
 .tests::-webkit-scrollbar {
   width: 24px;
@@ -854,6 +875,7 @@ body {
 .date {
   opacity: 0.5;
   margin: 5px 0;
+  font-size: 20px;
 }
 
 .time {
@@ -884,10 +906,20 @@ body {
 .pointer {
   cursor: pointer;
 }
+@media (max-width:800px){
+  .best-article{
+    /* text-align: center; */
+  }
+  .best-article-title{
+    font-size: 40px;
+    /* text-align: center; */
+    line-height: 100%;
+  }
+}
 
 @media (min-width: 1400px) {
   .container {
-    max-width: 1750px;
+    max-width: 1600px;
   }
 }
 @font-face {
