@@ -328,6 +328,7 @@ header {
 .test-info {
   opacity: 0.4;
   font-size: 14px;
+  margin: 10px 0;
 }
 
 .test-text {
@@ -342,27 +343,30 @@ header {
 }
 
 .tests {
-  padding: 50px 0 50px 0;
+  /* padding: 50px 0 50px 0; */
+  margin: 50px 0;
 }
 .test{
   position: relative;
   display: flex;
   flex-direction: row;
+  margin-bottom: 50px;
 
   
 }
 
 .test-img{
   /* padding: 0 10px; */
-  width: 250px;
-
+  
+  height: 100%;
+  width: 100%;
   object-fit: cover;
  
 
 }
 .test-content{
   padding:  10px;
-  width: 100%;
+  width: 60%;
 }
 .tests::-webkit-scrollbar {
   width: 24px;

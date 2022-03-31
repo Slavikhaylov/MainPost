@@ -2,9 +2,23 @@
 
 
 new Swiper('.swiper',{
-    scrollbar: {
-        el: '.swiper-scrollbar',
-        draggable: true,
-      },
-      slidesPerView: 2
+
+  scrollbar: {
+      el: '.swiper-scrollbar',
+      draggable: true,
+    },
+
+  breakpoints:{
+
+    800:{
+      slidesPerView: 1
+
+    },
+
+    1400:{
+        slidesPerView: 2
+
+    }
+
+  },
 })
