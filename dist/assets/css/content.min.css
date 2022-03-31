@@ -1,1 +1,118 @@
-.content{margin-top:77px}.arrow{position:absolute;top:0;right:0;height:20%;transition:.2s;z-index:1;cursor:pointer}.arrow:hover{transform:scale(1.2)}.discription{position:absolute;left:30px;bottom:30px;font-size:40px}.discription span{background:#000}.discription .genre{color:#00fbec;margin-bottom:15px;font-size:16px;padding:0 20px;text-align:center}.discription .title-1{font-size:30px;font-family:Play-regular}.discription .title-2{font-family:Comic-cat;margin:0;font-size:40px;height:10px;padding-right:30px}.news{background:#000;font-size:14px;padding:20px 0 20px 10px}.news .hot-news{font-size:2rem;color:#00fbec}.news .update{display:-ms-flexbox;display:flex;color:#fff732;-webkit-text-decoration:underline #fff732;text-decoration:underline #fff732;cursor:pointer;position:absolute;right:20px;top:10px}.news .update:after{content:"";display:block;margin-left:10px;background:url(../images/ic_refresh.png);height:24px;width:24px;transition:.5s}.news .update:hover:after{transform:rotate(180deg)}.remember{width:240px;margin:20% 0}@media (max-width:500px){.discription{font-size:25px}.discription .genre{font-size:1rem}.discription .title-1{font-size:1.2rem}.discription .title-2{font-size:1.5rem}}.stripe{width:fit-content;white-space:nowrap;margin-top:30px;background-color:#00fbec;border:1px solid #000}.stripe-text{position:relative;animation:a 40s linear infinite;color:#000;font-family:Play-regular}@keyframes a{0%{left:100%}to{left:-100%}}
+.content {
+  margin-top: 77px;
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 20%;
+  transition: 0.2s;
+  z-index: 1;
+  cursor: pointer;
+}
+.arrow:hover {
+  transform: scale(1.2);
+}
+
+.discription {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  font-size: 40px;
+}
+.discription span {
+  background: #000;
+}
+.discription .genre {
+  color: #00FBEC;
+  margin-bottom: 15px;
+  font-size: 16px;
+  padding: 0 20px;
+  text-align: center;
+}
+.discription .title-1 {
+  font-size: 30px;
+  font-family: "Play-regular";
+}
+.discription .title-2 {
+  font-family: "Comic-cat";
+  margin: 0;
+  font-size: 40px;
+  height: 10px;
+  padding-right: 30px;
+}
+
+.news {
+  background: #000;
+  font-size: 14px;
+  padding: 20px 0 20px 10px;
+}
+.news .hot-news {
+  font-size: 2rem;
+  color: #00FBEC;
+}
+.news .update {
+  display: flex;
+  color: #FFF732;
+  text-decoration: underline #FFF732;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+.news .update::after {
+  content: "";
+  display: block;
+  margin-left: 10px;
+  background: url(../images/ic_refresh.png);
+  height: 24px;
+  width: 24px;
+  transition: 0.5s;
+}
+.news .update:hover::after {
+  transform: rotate(180deg);
+}
+
+.remember {
+  width: 240px;
+  margin: 20% 0;
+}
+
+@media (max-width: 500px) {
+  .discription {
+    font-size: 25px;
+  }
+  .discription .genre {
+    font-size: 1rem;
+  }
+  .discription .title-1 {
+    font-size: 1.2rem;
+  }
+  .discription .title-2 {
+    font-size: 1.5rem;
+  }
+}
+.stripe {
+  width: fit-content;
+  white-space: nowrap;
+  margin-top: 30px;
+  background-color: #00FBEC;
+  border: 1px solid black;
+}
+
+.stripe-text {
+  position: relative;
+  animation: stripe 40s linear infinite;
+  color: #000;
+  font-family: "Play-regular";
+}
+
+@keyframes stripe {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -100%;
+  }
+}
