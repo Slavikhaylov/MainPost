@@ -146,6 +146,10 @@
         opacity: 1;
     }
 
+    .main-img {
+        height: 200px;
+    }
+
     .info {
         position: absolute;
         left: 20px;

@@ -23,13 +23,16 @@
         "gulp-strip-css-comments": "^2.0.0",
         "gulp-uglify": "^3.0.2",
         "panini": "^1.7.2",
+        "sass": "^1.43.4",
         "webpack": "^5.64.3",
-        "webpack-stream": "^7.0.0",
-        "sass": "^1.43.4"
+        "webpack-stream": "^7.0.0"
     },
     "browserslist": [
         "last 1 version",
         "> 1%",
         "IE 10"
-    ]
+    ],
+    "dependencies": {
+        "gulp-cli": "^2.3.0"
+    }
 }
